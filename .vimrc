@@ -216,24 +216,24 @@ au SessionLoadPost * exe 'au VimLeave * exe "mksession! " . v:this_session'
 nmap <F3> :exe "mksession! " . v:this_session<CR>:exe "so " . v:this_session<CR>
 
 "--------------------------------------------------------------------------------
-" windows key map
+" windows key map(ctrl->ctrl+alt)
 "--------------------------------------------------------------------------------
-nmap <C-a> ggVG
-imap <C-a> <ESC>ggVG
-vmap <C-c> "+y
-vmap <C-x> "+x
-nmap <C-v> "+gP
-imap <C-v> <C-r><C-o>+
-nmap <C-z> u
-imap <C-z> <ESC>ua
-nmap <C-s> :w<CR>
-imap <C-s> <C-o>:w<CR>
+nmap <C-M-a> ggVG
+imap <C-M-a> <ESC>ggVG
+vmap <C-M-c> "+y
+vmap <C-M-x> "+x
+nmap <C-M-v> "+gP
+imap <C-M-v> <C-r><C-o>+
+nmap <C-M-z> u
+imap <C-M-z> <ESC>ua
+nmap <C-M-s> :w<CR>
+imap <C-M-s> <C-o>:w<CR>
 
 "visual mode
-vmap <C-a> <ESC>ggVG
-vmap <C-v> "+gP
-vmap <C-z> <ESC>u
-vmap <C-s> <ESC>:w<CR>
+vmap <C-M-a> <ESC>ggVG
+vmap <C-M-v> "+gP
+vmap <C-M-z> <ESC>u
+vmap <C-M-s> <ESC>:w<CR>
 
 "--------------------------------------------------------------------------------
 " key map
@@ -248,7 +248,7 @@ vmap <C-s> <ESC>:w<CR>
 "--------------------------------------------------------------------------------
 "nmap <F3> ...,<F3>mapped, see session chapter
 "nmap <silent><F2> :Rgrep<CR>
-nmap <silent><F2> :e#<CR>
+"nmap <silent><F2> :e#<CR>
 nmap <silent><F9> :Tlist<CR>
 "nmap <silent><F12> :NERDTreeToggle<CR>
 nmap <silent><F10> :botright cw<CR>
