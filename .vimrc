@@ -23,6 +23,7 @@ set noautowrite     " 离开文件时不自动保存文件
 set hidden          " all buffer hidden
 set backspace=indent,eol,start    "set backspace=2
 set guifont=Monospace\ 12
+set guioptions-=T
 set history=100
 "--------------------------------------------------------------------------------
 " charset & fileformat variables:
